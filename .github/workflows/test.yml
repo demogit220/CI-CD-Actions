@@ -1,1 +1,8 @@
-for first testing of git actions
+name: My first github action
+on: [push]
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world!!!"
+      - run: echo "This is step number two"
